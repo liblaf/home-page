@@ -1,5 +1,7 @@
 .container {
   padding: 0 2rem;
+  color: #fff;
+  background-color: #212529;
 }
 
 .main {
@@ -21,15 +23,12 @@
   align-items: center;
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+.heart {
+  color: red;
 }
 
 .title a {
-  color: #0070f3;
+  color: cyan;
   text-decoration: none;
 }
 
@@ -82,14 +81,15 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  width: 300px;
+  height: 185px;
 }
 
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: cyan;
+  border-color: cyan;
 }
 
 .card h2 {
