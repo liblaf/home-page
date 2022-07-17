@@ -2,6 +2,9 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
+
+import StatusBadage from "../components/StatusBadge";
+
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
@@ -21,18 +24,27 @@ const Home: NextPage = () => {
         <p className={styles.description}> Life blooms like a flower </p>
 
         <div className={styles.grid}>
+          <a href="https://status.liblaf.top" className={styles.card}>
+            <h2> Status &rarr; </h2>
+            <StatusBadage name="status" type="response-time"></StatusBadage>
+            <p> Uptime monitor and status page. </p>
+          </a>
+
           <a href="https://blog.liblaf.top" className={styles.card}>
             <h2> Blog &rarr; </h2>
+            <StatusBadage name="blog" type="response-time"></StatusBadage>
             <p> My blog to record the moments of life. </p>
           </a>
 
           <a href="https://cdn.liblaf.top" className={styles.card}>
-            <h2> Cloud Drive &rarr; </h2>
+            <h2> CDN &rarr; </h2>
+            <StatusBadage name="cdn" type="response-time"></StatusBadage>
             <p> An index &amp; manager of Onedrive based on serverless. </p>
           </a>
 
           <a href="https://wydyf.liblaf.top" className={styles.card}>
             <h2> 未央书院答疑坊 &rarr; </h2>
+            <StatusBadage name="wydyf" type="response-time"></StatusBadage>
             <p> 加入我们, 为同学们答疑解惑! </p>
           </a>
 

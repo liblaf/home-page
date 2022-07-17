@@ -1,7 +1,5 @@
 .container {
   padding: 0 2rem;
-  color: #fff;
-  background-color: #212529;
 }
 
 .main {
@@ -82,7 +80,7 @@
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   width: 300px;
-  height: 185px;
+  height: 200px;
 }
 
 .card:hover,
