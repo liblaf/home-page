@@ -35,7 +35,6 @@ const StatusBadage = (props: StatusBadageProps) => {
       "https://raw.githubusercontent.com"
     ).toString()
   );
-  console.log(url.toString());
   return <img alt="Uptime" src={url.toString()}></img>;
 };
 
